@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<h2>{{ the_title }}</h2>
+<form method='POST' action='/process'>
+    <table>
+        <p>输入您的问题:</p>
+        <tr>
+            <td>问题:</td>
+            <td><input name='question' type='TEXT' width='60'></td>
+        </tr>
+    </table>
+    <p>输入问题后，点击下面的按钮:</p>
+    <p><input value='发送' type='SUBMIT'></p>
+</form>
+{% endblock %}
